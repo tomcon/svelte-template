@@ -1,18 +1,21 @@
 import svelte from 'rollup-plugin-svelte';
+import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-	input: 'src/app.js',
+	input: 'src/article.js',
 	output: {
-    file: 'public/app.client.js',
+    file: 'public/article.client.js',
 		format: 'iife',
-		name: 'App',
+		name: 'Article',
 		sourcemap: true
   },
 	plugins: [
 		svelte({
 			hydratable: true,
 			css: false,
-			cascade: false
-		})
+			cascade: false,
+			store: true
+		}),
+		resolve()
 	]
 };

@@ -1,9 +1,9 @@
 import svelte from 'rollup-plugin-svelte';
 
 export default {
-  input: 'src/App.html',
+  input: 'src/Article.html',
   output: {
-    file: 'public/app.server.js',
+    file: 'build/article.server.js',
     format: 'cjs'
   },
 	plugins: [
