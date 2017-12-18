@@ -1,0 +1,24 @@
+<h2>Child Component</h2>
+<table>
+  {{#each [0, 2, 4] as value}}
+  <tr><th>Number: </th><td>{{value}}</td></tr>
+  {{/each}}
+</table>
+<button on:click="change()">+</button>
+<span>{{count}}</span>
+
+<script>
+export default {
+  data() {
+    return {
+      count: 0
+    }
+  },
+  methods: {
+    change: function() {
+      let c = this.get('count') + 1;
+      this.set({count: c})
+    }
+  }
+}
+</script>
