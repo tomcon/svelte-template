@@ -777,9 +777,15 @@ assign(Store.prototype, {
 	}
 });
 
-const store = new Store({
-	message: 'store'
-});
+class ArticleStore extends Store {
+  constructor() {
+    super({
+      message: 'store'
+    });
+  }
+}
+
+const store = new ArticleStore();
 
 let article;
 const button = document.getElementById('hydrate');

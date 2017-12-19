@@ -1,9 +1,7 @@
 import Article from './Article.html';
-import { Store } from 'svelte/store.js';
+import Store from './Store.js';
 
-const store = new Store({
-	message: 'store'
-});
+const store = new Store();
 
 let article;
 const button = document.getElementById('hydrate');
