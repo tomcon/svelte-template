@@ -9,7 +9,7 @@ const template = fs.readFileSync('./bin/template.html', 'utf8');
 // const { Store } = esm('svelte/store');
 
 const rendered = article.render();
-const {html, css} = rendered;
-const output = template.replace('/* CSS */', css.code).replace('<!-- HTML -->', html);
+const {head, html, css} = rendered;
+const output = template.replace('/* CSS */', css.code).replace('<!-- HTML -->', html).replace('<!-- HEAD -->', head);
 
 fs.writeFileSync('./public/index.html', output, 'utf8')
