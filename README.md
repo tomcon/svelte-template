@@ -17,3 +17,17 @@ npm run build
 
 npm run serve
 ```
+
+##Goals
+
+A reusable, reactive template for authoring interactive articles for https://distill.pub.
+
+##Features
+
+1. Server-side rendering for markup with client-side hydration of javascript.
+
+2. Support for a central data store.
+
+3. Uglify during production. (TODO)
+
+4. Image asset pipeline. (TODO)
