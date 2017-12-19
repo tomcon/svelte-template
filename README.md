@@ -31,3 +31,7 @@ A reusable, reactive template for authoring interactive articles for https://dis
 3. Uglify during production. (TODO)
 
 4. Image asset pipeline. (TODO)
+
+5. Live reloading during development. (TODO)
+
+6. Markdown support for article body. (TODO)
