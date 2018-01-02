@@ -6,7 +6,6 @@ const template = fs.readFileSync('./bin/template.html', 'utf8');
 // We currently can't import stores into node :(
 // Can do this maybe: https://github.com/sveltejs/svelte/issues/967
 // const esm = require('@std/esm')(module, { esm: 'js' });
-// const { Store } = esm('svelte/store');
 
 const rendered = article.render();
 const {head, html, css} = rendered;

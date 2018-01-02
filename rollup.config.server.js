@@ -9,6 +9,7 @@ export default {
 	plugins: [
 		svelte({
       generate: 'ssr',
+			hydratable: true,
       cascade: false
 		})
 	]
